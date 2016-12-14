@@ -20,6 +20,7 @@ public class HelloServlet extends HttpServlet{
         String currentTime = dateFormat.format(new Date());
         System.out.println("asdasdasdasdasdasd:::"+currentTime);
         req.setAttribute("currentTime",currentTime);
+        System.out.println("1231231231231231232");
         req.getRequestDispatcher("/WEB-INF/allhtml/helloTest.jsp").forward(req,resp);
     }
 
